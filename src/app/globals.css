@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .nav-link {
+    @apply px-4 py-3 bg-white text-base font-normal hover:bg-gray-200 hover:rounded-4xl flex items-center gap-1;
+  }
+  .container {
+    @apply lg:max-w-[1440px] mx-auto  py-3 lg:px-10 px-6;
+  }
+  .secondaryContainer {
+    @apply lg:max-w-[1440px] max-w-full mx-auto lg:px-6;
+  }
+  .thirdContainer {
+    @apply bg-[#07130c] bg-[url('/background.svg')] bg-center bg-cover relative overflow-hidden py-[120px] px-[80px] rounded-lg;
+  }
+  .bg-primaryColor {
+    background-color: #4dfa8a;
+  }
+  .bg-darkGreen {
+    background-color: #183c24;
+  }
+  .primaryButton {
+    @apply bg-[#4dfa8a] border border-[#183c24] rounded-lg py-2 px-3 uppercase text-sm;
+  }
+  progress::-webkit-progress-value {
+    @apply bg-[#4dfa8a];
+  }
+  progress::-webkit-progress-bar {
+    @apply bg-gray-200;
+  }
+  .sectionContainer {
+    @apply md:py-[120px] py-[60px] px-[16px];
+  }
+  .sectionContainerSecondary {
+    @apply m-auto  max-w-[970px];
+  }
+  .sectionHeading {
+    @apply md:text-[40px] text-lg leading-[140%] tracking-[-0.045em] font-medium mb-4;
+  }
+  .sectionSubHeading {
+    @apply text-2xl leading-[140%] tracking-[-0.045em] font-normal mb-3;
+  }
+  .sectionDes {
+    @apply mb-12 md:text-[18px] text-sm leading-[150%] tracking-[-0.045em] font-normal;
+  }
+  /* Tokenomics layout */
+  .tokenomics_wrapp {
+    position: relative;
+    padding: 48px 0;
+  }
+  .tokenomics_wrapp .left_column {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(calc(-100% - 340px), -50%);
+    flex-direction: column;
+    gap: 12px;
+  }
+  .tokenomics_wrapp .right_column {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(340px, -50%);
+
+    flex-direction: column;
+    gap: 12px;
+  }
+  .tokenomics_img {
+    @apply w-[288px] h-[213px] lg:w-[400px] lg:h-[400px];
+    position: relative;
+    margin: auto;
+  }
+  .tokenomics_block {
+    @apply flex items-center gap-3 px-4 py-3;
+  }
+  .tokenomics_perc {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+  .tokenomics_title {
+    @apply text-gray-600 text-base;
+  }
+  /* Featured logos strip */
+  .featured-strip {
+    height: 120px;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured-track {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    animation: featured-scroll 40s linear infinite;
+    will-change: transform;
+  }
+  .featured-card {
+    height: 100%;
+    width: 300px;
+    padding: 0 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes featured-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  :root {
+    --font-arial: Arial, sans-serif;
+  }
+  .font-arial {
+    font-family: var(--font-arial);
+  }
+}

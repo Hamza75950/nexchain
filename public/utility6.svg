@@ -1,0 +1,35 @@
+<svg width="320" height="200" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="320" height="200" rx="8" fill="#222D26"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M150 80C150 74.4772 154.477 70 160 70C165.523 70 170 74.4772 170 80V120C170 125.523 165.523 130 160 130C154.477 130 150 125.523 150 120V80ZM168 80V120C168 124.418 164.418 128 160 128C155.582 128 152 124.418 152 120V80C152 75.5817 155.582 72 160 72C164.418 72 168 75.5817 168 80Z" fill="url(#paint0_radial_18303_25331)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M160 64C151.163 64 144 71.1634 144 80V120C144 128.837 151.163 136 160 136C168.837 136 176 128.837 176 120V80C176 71.1634 168.837 64 160 64ZM174 120V80C174 72.268 167.732 66 160 66C152.268 66 146 72.268 146 80V120C146 127.732 152.268 134 160 134C167.732 134 174 127.732 174 120Z" fill="url(#paint1_radial_18303_25331)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M138 80C138 67.8497 147.85 58 160 58C172.15 58 182 67.8497 182 80V120C182 132.15 172.15 142 160 142C147.85 142 138 132.15 138 120V80ZM180 80V120C180 131.046 171.046 140 160 140C148.954 140 140 131.046 140 120V80C140 68.9543 148.954 60 160 60C171.046 60 180 68.9543 180 80Z" fill="url(#paint2_radial_18303_25331)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M160 52C144.536 52 132 64.536 132 80V120C132 135.464 144.536 148 160 148C175.464 148 188 135.464 188 120V80C188 64.536 175.464 52 160 52ZM186 120V80C186 65.6406 174.359 54 160 54C145.641 54 134 65.6406 134 80V120C134 134.359 145.641 146 160 146C174.359 146 186 134.359 186 120Z" fill="url(#paint3_radial_18303_25331)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M126 80C126 61.2223 141.222 46 160 46C178.778 46 194 61.2223 194 80V120C194 138.778 178.778 154 160 154C141.222 154 126 138.778 126 120V80ZM192 80V120C192 137.673 177.673 152 160 152C142.327 152 128 137.673 128 120V80C128 62.3269 142.327 48 160 48C177.673 48 192 62.3269 192 80Z" fill="url(#paint4_radial_18303_25331)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M120 80C120 57.9086 137.909 40 160 40C182.091 40 200 57.9086 200 80V120C200 142.091 182.091 160 160 160C137.909 160 120 142.091 120 120V80ZM198 80V120C198 140.987 180.987 158 160 158C139.013 158 122 140.987 122 120V80C122 59.0132 139.013 42 160 42C180.987 42 198 59.0132 198 80Z" fill="url(#paint5_radial_18303_25331)"/>
+<defs>
+<radialGradient id="paint0_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint2_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint3_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint4_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint5_radial_18303_25331" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 100) rotate(78.6901) scale(81.5843 54.3895)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
