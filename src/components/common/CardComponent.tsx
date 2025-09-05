@@ -6,7 +6,7 @@ interface CardType {
   item: {
     imageUrl: string;
     title: string;
-    para: string;
+    para?: string;
     dateTime?: string;
     button?: boolean;
   };
@@ -31,9 +31,11 @@ const CardComponent: React.FC<CardType> = ({ item }) => {
         <h3 className="text-2xl leading-[140%] tracking-[-0.045em] font-medium text-black whitespace-pre-line">
           {title}
         </h3>
-        <p className="text-base leading-[140%] tracking-[-0.045em] font-normal text-[#4d544f]">
-          {para}
-        </p>
+        {para && (
+          <p className="text-base leading-[140%] tracking-[-0.045em] font-normal text-[#4d544f]">
+            {para}
+          </p>
+        )}
       </div>
       {button && (
         <div>
