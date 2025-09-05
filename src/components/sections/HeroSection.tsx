@@ -6,7 +6,7 @@ import FlatButton from "../common/FlatButton";
 interface HeroType {
   buttonLable?: string;
   heading: string;
-  paragraph: string;
+  paragraph?: string;
   bottomButton: boolean;
   bottomCard: boolean;
   multicard?: boolean;
@@ -49,9 +49,11 @@ const HeroSection: React.FC<HeroType> = ({
             >
               {heading}
             </h1>
-            <p className="text-[18px] leading-[150%] tracking-[-0.045em] font-normal w-full text-center ">
-              {paragraph}
-            </p>
+            {paragraph && (
+              <p className="text-[18px] leading-[150%] tracking-[-0.045em] font-normal w-full text-center whitespace-break-spaces ">
+                {paragraph}
+              </p>
+            )}
           </div>
           {/* bottom card */}
           {bottomCard && (

@@ -49,17 +49,19 @@ const NavMobileView: React.FC<NavMobileViewType> = ({
                   Tokenomics
                 </Link>
                 <Link
-                  href="/"
+                  href="https://nexchain.ai/documents/Whitepaper-Nexchain.pdf"
                   className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
+                  target="_blank"
                 >
                   Whitepaper
                   <ArrowUpRight className="w-5 h-5 text-black" />
                 </Link>
                 <Link
-                  href="/"
+                  href="https://nexchain.ai/documents/Litepaper-Nexchain.pdf"
                   className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
+                  target="_blank"
                 >
                   Litepaper
                   <ArrowUpRight className="w-5 h-5 text-black" />
@@ -167,25 +169,53 @@ const NavMobileView: React.FC<NavMobileViewType> = ({
             {openMenu === "learn" && (
               <div className="pl-4 pb-2">
                 <Link
+                  href="/learn/how-to-buy"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  How to buy
+                </Link>
+                <Link
+                  href="/learn/referrals"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Referals
+                </Link>
+                <Link
                   href="/learn/docs"
-                  className="block py-2"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
                 >
                   Docs
                 </Link>
                 <Link
-                  href="/learn/tutorials"
-                  className="block py-2"
+                  href="/learn/partners"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Tutorials
+                  Partners
                 </Link>
                 <Link
-                  href="/learn/blog"
-                  className="block py-2"
+                  href="/learn/brand-kit"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
                 >
-                  Blog
+                  Brand Kit
+                </Link>
+                <Link
+                  href="/learn/careers"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Career
+                </Link>
+                <Link
+                  href="/learn/contact"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
+                  onClick={closeMenu}
+                >
+                  Contact
                 </Link>
               </div>
             )}
@@ -206,18 +236,20 @@ const NavMobileView: React.FC<NavMobileViewType> = ({
             {openMenu === "testnet" && (
               <div className="pl-4 pb-2">
                 <Link
-                  href="/testnet/faucet"
-                  className="block py-2"
+                  href="https://www.nexscan.cloud/"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
                   onClick={closeMenu}
-                >
-                  Faucet
-                </Link>
-                <Link
-                  href="/testnet/explorer"
-                  className="block py-2"
-                  onClick={closeMenu}
+                  target="_blank"
                 >
                   Explorer
+                </Link>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 rounded hover:bg-gray-50"
+                  onClick={closeMenu}
+                  target="_blank"
+                >
+                  Faucet
                 </Link>
               </div>
             )}

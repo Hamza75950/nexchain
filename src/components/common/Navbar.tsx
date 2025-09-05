@@ -93,7 +93,11 @@ const Navbar = () => {
                     />
                   </Button>
                 </div>
-                <Link href={"/"} className="nav-link">
+                <Link
+                  href={"https://nexchain.ai/airdrop"}
+                  target="_blank"
+                  className="nav-link"
+                >
                   Airdorp
                 </Link>
               </div>
@@ -127,17 +131,19 @@ const Navbar = () => {
                     Tokenomics
                   </Link>
                   <Link
-                    href="/"
+                    href="https://nexchain.ai/documents/Whitepaper-Nexchain.pdf"
                     className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
+                    target="_blank"
                   >
                     Whitepaper
                     <ArrowUpRight className="w-5 h-5 text-black" />
                   </Link>
                   <Link
-                    href="/"
+                    href="https://nexchain.ai/documents/Litepaper-Nexchain.pdf"
                     className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
+                    target="_blank"
                   >
                     Litepaper
                     <ArrowUpRight className="w-5 h-5 text-black" />
@@ -214,49 +220,49 @@ const Navbar = () => {
               {openMenu === "learn" && (
                 <div className="max-w-full  bg-white p-2 ">
                   <Link
-                    href="/"
+                    href="/learn/how-to-buy"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     How to buy
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/referrals"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     Referals
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/docs"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     Docs
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/partners"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     Partners
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/brand-kit"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     Brand Kit
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/careers"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
                     Career
                   </Link>
                   <Link
-                    href="/"
+                    href="/learn/contact"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
                   >
@@ -267,9 +273,10 @@ const Navbar = () => {
               {openMenu === "testnet" && (
                 <div className="max-w-full bg-white">
                   <Link
-                    href="/"
+                    href="https://www.nexscan.cloud/"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
+                    target="_blank"
                   >
                     Explorer
                   </Link>
@@ -277,6 +284,7 @@ const Navbar = () => {
                     href="/"
                     className="block px-3 py-2 rounded hover:bg-gray-50"
                     onClick={closeMenu}
+                    target="_blank"
                   >
                     Faucet
                   </Link>
