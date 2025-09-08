@@ -30,7 +30,7 @@ const FinancialInfrastructurePage = () => {
     {
       imageUrl: "/finantial5.svg",
       title: "Global Reach",
-      para: "Enable cross-border financial services with Nexchain's interoperable, AI-enhanced infrastructure.",
+      para: `Enable cross-border financial services with Nexchain's interoperable, AI-enhanced infrastructure.`,
     },
   ];
 
@@ -38,7 +38,7 @@ const FinancialInfrastructurePage = () => {
     {
       imageUrl: "/finantialList1.svg",
       heading: "AI-Driven Financial Systems",
-      des: "Nexchain's AI capabilities are integrated across all aspects of financial infrastructure. Through machine learning and predictive analytics, Nexchain enables financial institutions and businesses to offer dynamic, real-time financial services that can adapt to evolving market conditions and user behavior.",
+      des: `Nexchain's AI capabilities are integrated across all aspects of financial infrastructure. Through machine learning and predictive analytics, Nexchain enables financial institutions and businesses to offer dynamic, real-time financial services that can adapt to evolving market conditions and user behavior.`,
       cards: [
         {
           heading: "Real-Time Risk \n Management",
@@ -53,7 +53,7 @@ const FinancialInfrastructurePage = () => {
     {
       imageUrl: "/finantialList2.svg",
       heading: "Seamless Payments and Transactions",
-      des: "Nexchain enables ultra-fast and low-cost financial transactions by leveraging AI-driven consensus mechanisms and optimizing network throughput. Whether it's cross-border payments, digital asset transfers, or peer-to-peer transactions, Nexchain's platform ensures that your financial transactions are processed securely and efficiently.",
+      des: `Nexchain enables ultra-fast and low-cost financial transactions by leveraging AI-driven consensus mechanisms and optimizing network throughput. Whether it's cross-border payments, digital asset transfers, or peer-to-peer transactions, Nexchain's platform ensures that your financial transactions are processed securely and efficiently.`,
       cards: [
         {
           heading: "High Throughput \n Payments",
@@ -68,22 +68,22 @@ const FinancialInfrastructurePage = () => {
     {
       imageUrl: "/finantialList3.svg",
       heading: "Decentralized Finance (DeFi) Solutions",
-      des: "Nexchain offers powerful AI-enhanced decentralized finance (DeFi) tools that enable the creation of innovative financial products. From decentralized exchanges to lending protocols, Nexchain's AI-driven infrastructure ensures the seamless functioning and security of DeFi platforms.",
+      des: `Nexchain offers powerful AI-enhanced decentralized finance (DeFi) tools that enable the creation of innovative financial products. From decentralized exchanges to lending protocols, Nexchain's AI-driven infrastructure ensures the seamless functioning and security of DeFi platforms.`,
       cards: [
         {
           heading: "AI-Powered DeFi \n Protocols",
-          des: "Using AI to adjust liquidity, lending rates, and risk management, Nexchain's DeFi solutions remain efficient and adaptable, even in fluctuating market conditions.",
+          des: `Using AI to adjust liquidity, lending rates, and risk management, Nexchain's DeFi solutions remain efficient and adaptable, even in fluctuating market conditions.`,
         },
         {
           heading: "Automated Yield \n Optimization",
-          des: "AI-powered protocols analyze investment opportunities in real-time and automatically optimize yield farming and staking strategies, maximizing returns for users.",
+          des: `AI-powered protocols analyze investment opportunities in real-time and automatically optimize yield farming and staking strategies, maximizing returns for users.`,
         },
       ],
     },
     {
       imageUrl: "/finantialList4.svg",
       heading: "Asset Management with AI",
-      des: "Nexchain's AI-driven asset management solutions offer financial institutions and investors tools to manage portfolios, optimize returns, and reduce risks. By analyzing real-time market data, Nexchain ensures that portfolios are dynamically adjusted to meet investment goals and market conditions.",
+      des: `Nexchain's AI-driven asset management solutions offer financial institutions and investors tools to manage portfolios, optimize returns, and reduce risks. By analyzing real-time market data, Nexchain ensures that portfolios are dynamically adjusted to meet investment goals and market conditions.`,
       cards: [
         {
           heading: "Predictive Analytics",
@@ -113,15 +113,15 @@ const FinancialInfrastructurePage = () => {
     {
       imageUrl: "/finantialList6.svg",
       heading: "Scalable and Efficient Financial Infrastructure",
-      des: "Nexchain's AI-enhanced infrastructure is designed to scale with your financial needs. Whether you're running a high-volume payment system or a complex DeFi protocol, Nexchain can handle significant transaction loads while maintaining low latency and high efficiency.",
+      des: `Nexchain's AI-enhanced infrastructure is designed to scale with your financial needs. Whether you're running a high-volume payment system or a complex DeFi protocol, Nexchain can handle significant transaction loads while maintaining low latency and high efficiency.`,
       cards: [
         {
           heading: "Scalable \n Architecture",
-          des: "With AI-driven network optimization, Nexchain's platform scales effortlessly to accommodate growing transaction volumes and expanding financial systems, ensuring no disruption in service.",
+          des: `With AI-driven network optimization, Nexchain's platform scales effortlessly to accommodate growing transaction volumes and expanding financial systems, ensuring no disruption in service.`,
         },
         {
           heading: "Low-Cost \n Transactions",
-          des: "Thanks to AI-driven consensus mechanisms and optimization, Nexchain maintains low transaction fees while ensuring the network remains fast and efficient.",
+          des: `Thanks to AI-driven consensus mechanisms and optimization, Nexchain maintains low transaction fees while ensuring the network remains fast and efficient.`,
         },
       ],
     },

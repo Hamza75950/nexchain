@@ -14,7 +14,7 @@ function ContactPage() {
       <div className="max-w-[1360px] m-auto px-[15px] grid lg:grid-cols-2 grid-cols-1 ">
         <div className="max-w-[450px] flex justify-center flex-col">
           <h1 className="mb-8 lg:text-[48px] text-[32px] lg:max-w-full max-w-[280px] leading-[140%] tracking-[-0.045em] font-medium">
-            We're always here for you
+            We&apos;re always here for you
           </h1>
           <p className="lg:text-[24px] text-[18px] leading-[140%] tracking-[-0.045em] font-normal mb-12">
             Please leave us a message. Our team will contact you as soon as

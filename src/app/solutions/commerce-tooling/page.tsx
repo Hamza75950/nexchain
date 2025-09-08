@@ -132,7 +132,7 @@ function CommerceToolingPage() {
         buttonLable="Commerce Tooling"
         buttonLableIcon="/commerce.svg"
         heading={`AI-Enhanced Blockchain Solutions \n for E-Commerce Innovation`}
-        paragraph="Nexchain offers AI-powered blockchain tools designed to transform e-commerce. Whether you're a retailer, platform provider, or service integrator, Nexchain’s advanced technology enables secure, scalable, and seamless commerce solutions that empower businesses to innovate and optimize their operations."
+        paragraph="Nexchain offers AI-powered blockchain tools designed to transform e-commerce. Whether you&apos;re a retailer, platform provider, or service integrator, Nexchain’s advanced technology enables secure, scalable, and seamless commerce solutions that empower businesses to innovate and optimize their operations."
         bottomButton={true}
         bottomCard={false}
       />

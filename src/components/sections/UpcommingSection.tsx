@@ -87,7 +87,7 @@ export default function UpcommingSection() {
                     <p className="text-lg">Airdrop</p>
                   </div>
                   <div className="px-2 py-2 border border-gray-500 rounded-lg bg-white">
-                    <p>IT'S STARTED</p>
+                    <p>IT&apos;S STARTED</p>
                   </div>
                 </div>
                 <div className="p-2 text-sm">
@@ -103,7 +103,7 @@ export default function UpcommingSection() {
                 <div className="flex justify-between items-center gap-4 text-black ">
                   <p className="text-lg">Testnet</p>
                   <div className="px-2 py-2 border border-gray-500 rounded-lg bg-white">
-                    <p>IT'S STARTED</p>
+                    <p>IT&apos;S STARTED</p>
                   </div>
                 </div>
                 <div className="p-2 text-sm">

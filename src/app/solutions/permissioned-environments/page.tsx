@@ -15,7 +15,7 @@ function PermissionEnvironmentPage() {
     {
       imageUrl: "/permission2.svg",
       title: "Scalable Infrastructure",
-      para: "Nexchain's permissioned environments are built to scale, handling enterprise-level transaction volumes and growing network sizes with ease.",
+      para: `Nexchain's permissioned environments are built to scale, handling enterprise-level transaction volumes and growing network sizes with ease.`,
     },
     {
       imageUrl: "/permissio3.svg",
@@ -139,7 +139,7 @@ function PermissionEnvironmentPage() {
       </section>
       <BottomPannel
         heading="Get Started with Nexchain Permissioned Environments"
-        des="Transform your business operations with Nexchain’s AI-powered permissioned blockchain environments. Whether you're looking to build a secure, private blockchain for internal use or a private financial ecosystem, Nexchain provides the tools, scalability, and security you need to succeed. Start today and build the next-generation permissioned blockchain solutions with Nexchain."
+        des="Transform your business operations with Nexchain&apos;s AI-powered permissioned blockchain environments. Whether you&apos;re looking to build a secure, private blockchain for internal use or a private financial ecosystem, Nexchain provides the tools, scalability, and security you need to succeed. Start today and build the next-generation permissioned blockchain solutions with Nexchain."
         buttonText="Join Presale"
       />
     </>
