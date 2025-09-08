@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import FooterSocialLinks from "./FooterSocialLinks";
-import { ArrowUpRight, MoveUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import ButtonComponent from "./Button";
 import Link from "next/link";
 

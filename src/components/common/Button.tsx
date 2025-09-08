@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
-import { ArrowUpRight, MoveUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface buttonType {
   invert: boolean;

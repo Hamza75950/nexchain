@@ -1,9 +1,8 @@
 import FlatButton from "@/components/common/FlatButton";
 import HowToParticipateCard from "@/components/common/HowToParticipateCard";
-import AiPoweredSection from "@/components/sections/AiPoweredSection";
+
 import FAQAccordion from "@/components/sections/FaqSection";
 import HeroSection from "@/components/sections/HeroSection";
-import { Section } from "lucide-react";
 import React from "react";
 
 function HowToBuYPage() {

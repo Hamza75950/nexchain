@@ -8,24 +8,48 @@ function RoadMapSection() {
   interface RoadmapItem {
     text: string;
   }
-  interface RoadmapCardData {
-    quarter: string;
-    year: string;
-    title: string;
-    items: RoadmapItem[];
-    outcome?: string;
-    cardBg?: string;
-    cardBorder?: string;
-    // Optional status properties for completed items
-    status?: string;
-    statusBg?: string;
-    statusBorder?: string;
-    statusText?: string;
-    // Variant for accordion styling
-    variant?: "default" | "secondary";
-  }
+  // interface RoadmapCardData {
+  //   quarter: string;
+  //   year: string;
+  //   title: string;
+  //   items: RoadmapItem[];
+  //   outcome?: string;
+  //   cardBg?: string;
+  //   cardBorder?: string;
+  //   // Optional status properties for completed items
+  //   status?: string;
+  //   statusBg?: string;
+  //   statusBorder?: string;
+  //   statusText?: string;
+  //   // Variant for accordion styling
+  //   variant?: "default" | "secondary";
+  // }
   // Combined roadmap data for both desktop and mobile views
-  const accordionData = [
+
+  type RoadmapVariant = 'default' | 'secondary' | 'tertiary';
+
+interface RoadmapItem {
+  text: string;
+}
+
+interface RoadmapCardData {
+  quarter: string;
+  year: string;
+  title: string;
+  status?: string;
+  statusBg?: string;
+  statusBorder?: string;
+  statusText?: string;
+  outcome?: string;
+  cardBg?: string;
+  cardBorder?: string;
+  variant: RoadmapVariant;
+  items: RoadmapItem[];
+}
+
+
+
+  const accordionData: RoadmapCardData[] = [
     // Q4 2024 - Idea concept and architecture
     {
       quarter: "Q4",
@@ -183,7 +207,7 @@ function RoadMapSection() {
         </div>
         <div className="lg:grid lg:grid-cols-2 hidden gap-4">
           {accordionData.slice(0, 3).map((card, index) => (
-            <RoadmapCard key={index} data={card as any} />
+              <RoadmapCard key={index} data={card} />
           ))}
           {/* card 4 */}
 
@@ -255,9 +279,9 @@ function RoadMapSection() {
               </div>
             </div>
           </div>
-          {accordionData.slice(4).map((card, index) => (
-            <RoadmapCard2 key={index} data={card as any} />
-          ))}
+         {accordionData.slice(4).map((card, index) => (
+  <RoadmapCard2 key={index} data={card} />
+))}
         </div>
         <div className="grid lg:grid-cols-1 lg:hidden gap-4">
           {accordionData.map((card, index) => (

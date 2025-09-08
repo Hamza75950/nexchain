@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+
 import HeroSection from "@/components/sections/HeroSection";
 import UpcommingSection from "@/components/sections/UpcommingSection";
 import AiPoweredSection from "@/components/sections/AiPoweredSection";
