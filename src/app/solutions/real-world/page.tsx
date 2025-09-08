@@ -40,7 +40,7 @@ const RealWorldPage = () => {
     {
       imageUrl: "/realList1.svg",
       heading: "AI-Driven Tokenization of Real-World Assets",
-      des: "Nexchain's AI-powered platform lets users tokenize real-world assets like real estate, commodities, and art. Using machine learning and automation, we ensure accurate blockchain representation with enhanced transparency and security. This simplifies bringing physical assets into the digital world for DeFi, trading, and more.",
+      des: `Nexchain's AI-powered platform lets users tokenize real-world assets like real estate, commodities, and art. Using machine learning and automation, we ensure accurate blockchain representation with enhanced transparency and security. This simplifies bringing physical assets into the digital world for DeFi, trading, and more.`,
       cards: [
         {
           heading: "Efficient Asset \n Valuation",
@@ -63,7 +63,7 @@ const RealWorldPage = () => {
         },
         {
           heading: "Immutable Record \n Keeping",
-          des: "Tokenized assets are securely stored on Nexchain's blockchain, ensuring transparency and creating an immutable record of ownership.",
+          des: `Tokenized assets are securely stored on Nexchain's blockchain, ensuring transparency and creating an immutable record of ownership.`,
         },
       ],
     },
@@ -85,7 +85,7 @@ const RealWorldPage = () => {
     {
       imageUrl: "/realList4.svg",
       heading: "AI-Optimized Asset Management",
-      des: "Nexchain's AI technology also helps manage tokenized assets effectively, automating critical processes such as asset tracking, transaction validation, and price forecasting. This reduces the operational burden on asset holders and investors while optimizing decision-making for buying, selling, and holding assets.",
+      des: `Nexchain's AI technology also helps manage tokenized assets effectively, automating critical processes such as asset tracking, transaction validation, and price forecasting. This reduces the operational burden on asset holders and investors while optimizing decision-making for buying, selling, and holding assets.`,
       cards: [
         {
           heading: "Real-Time Asset \n Monitoring",
@@ -93,14 +93,14 @@ const RealWorldPage = () => {
         },
         {
           heading: "Automated Portfolio \n Management",
-          des: "Nexchain's AI tools automatically adjust asset portfolios based on real-time data, market trends, and investor preferences, ensuring optimal returns and minimized risks.",
+          des: `Nexchain's AI tools automatically adjust asset portfolios based on real-time data, market trends, and investor preferences, ensuring optimal returns and minimized risks.`,
         },
       ],
     },
     {
       imageUrl: "/realList5.svg",
       heading: "Integration with DeFi and Blockchain Ecosystems",
-      des: "The integration of real-world assets into Nexchain's ecosystem opens up new possibilities for decentralized finance (DeFi) applications. By bringing physical assets into the digital space, Nexchain's AI-powered solutions make it easier for businesses and individuals to engage in decentralized trading, lending, and borrowing using tokenized assets as collateral.",
+      des: `The integration of real-world assets into Nexchain's ecosystem opens up new possibilities for decentralized finance (DeFi) applications. By bringing physical assets into the digital space, Nexchain's AI-powered solutions make it easier for businesses and individuals to engage in decentralized trading, lending, and borrowing using tokenized assets as collateral.`,
       cards: [
         {
           heading: "DeFi Compatibility",
@@ -108,7 +108,7 @@ const RealWorldPage = () => {
         },
         {
           heading: "Cross-Platform \n Interoperability",
-          des: "Nexchain's platform enables the seamless transfer and use of tokenized real-world assets across multiple blockchain networks, offering enhanced flexibility and liquidity.",
+          des: `Nexchain's platform enables the seamless transfer and use of tokenized real-world assets across multiple blockchain networks, offering enhanced flexibility and liquidity.`,
         },
       ],
     },

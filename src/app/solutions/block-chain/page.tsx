@@ -37,7 +37,7 @@ function BlockChainPage() {
     {
       imageUrl: "/blockChainListicon1.svg",
       heading: "AI-Powered Smart Actions",
-      des: "Nexchain's AI actions provide developers with intelligent tools to automate blockchain tasks that traditionally required manual intervention. With machine learning and real-time data analysis, these actions dynamically optimize processes, improving performance, security, and scalability.",
+      des: `Nexchain's AI actions provide developers with intelligent tools to automate blockchain tasks that traditionally required manual intervention. With machine learning and real-time data analysis, these actions dynamically optimize processes, improving performance, security, and scalability.`,
       cards: [
         {
           heading: "Automated \n Governance",
@@ -86,7 +86,7 @@ function BlockChainPage() {
     {
       imageUrl: "/blockChainListicon4.svg",
       heading: "Decentralized Decision-Making",
-      des: "Nexchain's AI actions support decentralized decision-making by automatically analyzing data, votes, and community feedback to drive consensus. This not only reduces the need for manual intervention but also ensures that decisions are made swiftly and transparently.",
+      des: `Nexchain's AI actions support decentralized decision-making by automatically analyzing data, votes, and community feedback to drive consensus. This not only reduces the need for manual intervention but also ensures that decisions are made swiftly and transparently.`,
       cards: [
         {
           heading: "Consensus \n Management",
@@ -101,15 +101,15 @@ function BlockChainPage() {
     {
       imageUrl: "/blockChainListicon5.svg",
       heading: "Scalability and Efficiency",
-      des: "Nexchain's AI-driven actions allow the blockchain network to scale efficiently, even during high demand. AI algorithms automatically adjust network protocols, transaction validation mechanisms, and resource distribution, ensuring that the blockchain can handle millions of transactions per second without compromising performance.",
+      des: `Nexchain's AI-driven actions allow the blockchain network to scale efficiently, even during high demand. AI algorithms automatically adjust network protocols, transaction validation mechanisms, and resource distribution, ensuring that the blockchain can handle millions of transactions per second without compromising performance.`,
       cards: [
         {
           heading: "Optimized Network \n Scaling",
-          des: "AI adjusts the blockchain's scalability mechanisms in real-time, allowing for smoother operation as the network grows and demand increases.",
+          des: `AI adjusts the blockchain's scalability mechanisms in real-time, allowing for smoother operation as the network grows and demand increases.`,
         },
         {
           heading: "Efficiency in \n Transaction \n Processing",
-          des: "AI-driven automation ensures that transactions are processed with minimal latency, regardless of network congestion, maintaining high throughput without excessive costs.",
+          des: `AI-driven automation ensures that transactions are processed with minimal latency, regardless of network congestion, maintaining high throughput without excessive costs.`,
         },
       ],
     },
@@ -120,7 +120,7 @@ function BlockChainPage() {
       cards: [
         {
           heading: "AI SDKs & APIs",
-          des: "Nexchain's suite of development tools enables you to quickly integrate AI algorithms into your projects, enhancing blockchain functionality and optimizing smart contracts.",
+          des: `Nexchain's suite of development tools enables you to quickly integrate AI algorithms into your projects, enhancing blockchain functionality and optimizing smart contracts.`,
         },
         {
           heading: "Customizable AI \n Models",

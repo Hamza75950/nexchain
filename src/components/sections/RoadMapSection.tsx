@@ -116,7 +116,7 @@ function RoadMapSection() {
         },
       ],
       outcome:
-        "Fully functional and usable Nexpolia with underlying infrastructure and user's tooling",
+        `Fully functional and usable Nexpolia with underlying infrastructure and user's tooling`,
       variant: "tertiary" as const,
       cardBg: "bg-[#222d25]",
       cardBorder: "border-[#222d25]",

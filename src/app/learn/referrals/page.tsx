@@ -38,7 +38,7 @@ function ReferalsPage() {
             <p className="sectionDes max-w-[672px]">
               Unlock the full potential of your earnings with Nexchain, the
               ultimate platform designed to maximize your rewards. Whether
-              you're staking, trading, or participating in exclusive programs,
+              you&apos;re staking, trading, or participating in exclusive programs,
               Nexchain ensures you get the most out of every transaction.
             </p>
           </div>

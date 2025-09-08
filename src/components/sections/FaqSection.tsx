@@ -22,7 +22,7 @@ const faqData: FAQItem[] = [
   {
     question: "When will NEX tokens be listed on exchanges?",
     answer:
-      "Nexchain will be listed after we raise $50 million during the presale. Once we reach that milestone, we'll immediately announce the exact date and the exchanges.",
+      `Nexchain will be listed after we raise $50 million during the presale. Once we reach that milestone, we'll immediately announce the exact date and the exchanges.`,
   },
   {
     question: "What is the NEX coin?",
