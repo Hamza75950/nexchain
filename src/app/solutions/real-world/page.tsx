@@ -1,10 +1,10 @@
 import BottomPannel from "@/components/common/BottomPannel";
 import CardComponent from "@/components/common/CardComponent";
-import ExtentionList from "@/components/common/ExtentionList";
+
 import ExtentionList2 from "@/components/common/ExtentionList2";
 import GreenCard from "@/components/common/GreenCard";
 import HeroSection from "@/components/sections/HeroSection";
-import Image from "next/image";
+
 import React from "react";
 
 const RealWorldPage = () => {

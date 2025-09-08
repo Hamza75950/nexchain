@@ -1,4 +1,4 @@
-import CardComponent from "@/components/common/CardComponent";
+
 import HeroSection from "@/components/sections/HeroSection";
 
 import Image from "next/image";

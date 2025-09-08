@@ -3,9 +3,7 @@ import CardComponent from "@/components/common/CardComponent";
 import ExtentionList from "@/components/common/ExtentionList";
 import GreenCard from "@/components/common/GreenCard";
 import HeroSection from "@/components/sections/HeroSection";
-import WhyNexChainSection from "@/components/sections/WhyNexChainSection";
-import { Heading } from "lucide-react";
-import Image from "next/image";
+
 import React from "react";
 
 const TokenExtentionPage = () => {

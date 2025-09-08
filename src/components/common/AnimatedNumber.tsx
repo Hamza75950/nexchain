@@ -13,7 +13,7 @@ export default function AnimatedNumber({
   const [displayValue, setDisplayValue] = useState(0);
 
   useEffect(() => {
-    let start = 0;
+
     const startTime = performance.now();
 
     const animate = (currentTime: number) => {

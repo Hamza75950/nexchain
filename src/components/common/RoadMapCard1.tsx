@@ -8,16 +8,17 @@ interface RoadmapItem {
 interface RoadmapCardData {
   quarter: string;
   year: string;
-  status: string;
-  statusBg: string;
-  statusBorder: string;
-  statusText: string;
   title: string;
   items: RoadmapItem[];
+  status?: string;
+  statusBg?: string;
+  statusBorder?: string;
+  statusText?: string;
   outcome?: string;
   cardBg?: string;
   cardBorder?: string;
 }
+
 
 interface RoadmapCardProps {
   data: RoadmapCardData;
@@ -37,11 +38,14 @@ const RoadmapCard: React.FC<RoadmapCardProps> = ({ data }) => {
             {data.quarter}
           </b>
           {data.year}
-          <span
-            className={`uppercase ${data.statusText} ${data.statusBg} ${data.statusBorder} rounded-lg w-fit px-3 py-2 ml-2 text-sm leading-5 tracking-normal font-medium`}
-          >
-            {data.status}
-          </span>
+          {data.status && (
+  <span
+    className={`uppercase ${data.statusText || ""} ${data.statusBg || ""} ${data.statusBorder || ""} rounded-lg w-fit px-3 py-2 ml-2 text-sm leading-5 tracking-normal font-medium`}
+  >
+    {data.status}
+  </span>
+)}
+
         </div>
       </div>
 

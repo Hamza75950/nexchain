@@ -4,9 +4,12 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import React from "react";
 
+type MenuKey = "about" | "solutions" | "learn" | "testnet" | null;
+
+
 interface NavMobileViewType {
   openMenu: string | null;
-  toggleSubmenu: any;
+  toggleSubmenu:(key: Exclude<MenuKey, null>) => void
   closeMenu: () => void;
 }
 
