@@ -56,7 +56,7 @@ function BrandKitPage() {
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 py-[100px] px-[16px]">
             {/* card */}
             {nexData.map((item, index) => (
-              <div className="border border-[#e8e8e8] bg-white rounded-[8px] p-[32px] flex justify-center items-start flex-col gap-4">
+              <div key={index} className="border border-[#e8e8e8] bg-white rounded-[8px] p-[32px] flex justify-center items-start flex-col gap-4">
                 <div
                   className={` w-full h-[320px]  flex items-center justify-center rounded-[8px] relative ${item.bgColor}`}
                 >
