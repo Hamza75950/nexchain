@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { ArrowUpRight, ChevronDown, Menu, MoveUpRight, X } from "lucide-react";
-import { useState } from "react";
+import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import ButtonComponent from "./Button";
 import NavMobileView from "./NavMobileView";
 
@@ -13,6 +13,8 @@ type MenuKey = "about" | "solutions" | "learn" | "testnet" | null;
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [openMenu, setOpenMenu] = useState<MenuKey>(null);
+  const [submenuHeight, setSubmenuHeight] = useState<string | number>("auto");
+  const activeSubmenuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleSubmenu = (key: Exclude<MenuKey, null>) => {
     setOpenMenu((prev) => (prev === key ? null : key));
@@ -24,16 +26,30 @@ const Navbar = () => {
   const closeToggleMenu = () => {
     setToggleMenu(false);
   };
+
+  // Dynamically update red div height
+  useEffect(() => {
+    if (openMenu && activeSubmenuRef.current) {
+      setSubmenuHeight(activeSubmenuRef.current.clientHeight);
+    } else {
+      setSubmenuHeight("auto");
+    }
+  }, [openMenu]);
+
   return (
     <>
       <div className="max-w-full bg-white">
         <div className="fixed top-0 inset-x-0 z-50 bg-white border-b border-gray-200">
           <div className="container px-3">
             <div className="flex justify-between items-center">
-              <a href="/">
+              {/* Logo */}
+              <Link href="/">
                 <Image src="/nex.svg" alt="logo" width={102} height={46} />
-              </a>
+              </Link>
+
+              {/* Desktop Nav */}
               <div className="lg:flex hidden gap-4 items-center font-[var(--font-inter)]">
+                {/* About */}
                 <div className="relative">
                   <Button
                     className="nav-link shadow-none ml-14"
@@ -47,7 +63,57 @@ const Navbar = () => {
                       }`}
                     />
                   </Button>
+                  {openMenu === "about" && (
+                    <div
+                      ref={activeSubmenuRef}
+                      className="absolute top-full left-0 mt-5 w-68 bg-white z-50"
+                    >
+                      <div className="py-2">
+                        <Link
+                          href="/about/ecosystem"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Ecosystem
+                        </Link>
+                        <Link
+                          href="/about/tokenomics "
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Tokenomics
+                        </Link>
+                        <Link
+                          href="https://nexchain.ai/documents/Whitepaper-Nexchain.pdf"
+                          className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                          target="_blank"
+                        >
+                          Whitepaper
+                          <ArrowUpRight className="w-5 h-5 text-black" />
+                        </Link>
+                        <Link
+                          href="https://nexchain.ai/documents/Litepaper-Nexchain.pdf"
+                          className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                          target="_blank"
+                        >
+                          Litepaper
+                          <ArrowUpRight className="w-5 h-5 text-black" />
+                        </Link>
+                        <Link
+                          href="/about/roadmap"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Roadmap
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
+
+                {/* Solutions */}
                 <div className="relative">
                   <Button
                     className="nav-link shadow-none"
@@ -61,10 +127,79 @@ const Navbar = () => {
                       }`}
                     />
                   </Button>
+                  {openMenu === "solutions" && (
+                    <div
+                      ref={activeSubmenuRef}
+                      className="absolute top-full left-0 mt-5 w-68 bg-white z-50"
+                    >
+                      <div className="py-2">
+                        <Link
+                          href="/solutions/all-solutions"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          All Solutions
+                        </Link>
+                        <Link
+                          href="/solutions/token-extention"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Token Extensions
+                        </Link>
+                        <Link
+                          href="/solutions/real-world"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Real World Assets
+                        </Link>
+                        <Link
+                          href="/solutions/financial-infrastructure"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Financial Infrastructure
+                        </Link>
+                        <Link
+                          href="/solutions/paynemt-tooling"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Payments Tooling
+                        </Link>
+                        <Link
+                          href="/solutions/block-chain"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          BlockChain Links
+                        </Link>
+                        <Link
+                          href="/solutions/permissioned-environments"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Permissioned Environments
+                        </Link>
+                        <Link
+                          href="/solutions/commerce-tooling"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Commerce Tooling
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <Link href={"/"} className="nav-link">
+
+                {/* Blog */}
+                <Link href={"/blog"} className="nav-link" onClick={closeMenu}>
                   Blog
                 </Link>
+
+                {/* Learn */}
                 <div className="relative">
                   <Button
                     className="nav-link shadow-none"
@@ -78,7 +213,67 @@ const Navbar = () => {
                       }`}
                     />
                   </Button>
+                  {openMenu === "learn" && (
+                    <div
+                      ref={activeSubmenuRef}
+                      className="absolute top-full left-0 mt-5 w-68 bg-white z-50"
+                    >
+                      <div className="py-2">
+                        <Link
+                          href="/learn/how-to-buy"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          How to buy
+                        </Link>
+                        <Link
+                          href="/learn/referrals"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Referals
+                        </Link>
+                        <Link
+                          href="/learn/docs"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Docs
+                        </Link>
+                        <Link
+                          href="/learn/partners"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Partners
+                        </Link>
+                        <Link
+                          href="/learn/brand-kit"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Brand Kit
+                        </Link>
+                        <Link
+                          href="/learn/careers"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Career
+                        </Link>
+                        <Link
+                          href="/learn/contact"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                        >
+                          Contact
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
+
+                {/* Testnet */}
                 <div className="relative">
                   <Button
                     className="nav-link shadow-none"
@@ -92,16 +287,40 @@ const Navbar = () => {
                       }`}
                     />
                   </Button>
+                  {openMenu === "testnet" && (
+                    <div
+                      ref={activeSubmenuRef}
+                      className="absolute top-full left-0 mt-5 w-68 bg-white z-50"
+                    >
+                      <div className="py-2">
+                        <Link
+                          href="https://www.nexscan.cloud/"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                          target="_blank"
+                        >
+                          Explorer
+                        </Link>
+                        <Link
+                          href="/"
+                          className="block px-3 py-2 rounded hover:bg-gray-50"
+                          onClick={closeMenu}
+                          target="_blank"
+                        >
+                          Faucet
+                        </Link>
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <Link
-                  href={"https://nexchain.ai/airdrop"}
-                  target="_blank"
-                  className="nav-link"
-                >
-                  Airdorp
+
+                {/* Airdrop */}
+                <Link href={"/"} className="nav-link" onClick={closeMenu}>
+                  Airdrop
                 </Link>
               </div>
 
+              {/* Right Side Buttons */}
               <div className="flex gap-2 items-center">
                 <ButtonComponent invert={false} buttonName="Join Presale" />
                 <Button
@@ -112,187 +331,7 @@ const Navbar = () => {
                 </Button>
               </div>
             </div>
-            {/* submenu divider */}
-            <div className="lg:flex hidden">
-              {openMenu === "about" && (
-                <div className="max-w-full  bg-white p-2 ">
-                  <Link
-                    href="/about/ecosystem"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Ecosystem
-                  </Link>
-                  <Link
-                    href="/"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Tokenomics
-                  </Link>
-                  <Link
-                    href="https://nexchain.ai/documents/Whitepaper-Nexchain.pdf"
-                    className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                    target="_blank"
-                  >
-                    Whitepaper
-                    <ArrowUpRight className="w-5 h-5 text-black" />
-                  </Link>
-                  <Link
-                    href="https://nexchain.ai/documents/Litepaper-Nexchain.pdf"
-                    className="flex items-center gap-1 px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                    target="_blank"
-                  >
-                    Litepaper
-                    <ArrowUpRight className="w-5 h-5 text-black" />
-                  </Link>
-                  <Link
-                    href="/about/roadmap"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Roadmap
-                  </Link>
-                </div>
-              )}
-              {openMenu === "solutions" && (
-                <div className="max-w-full  bg-white p-2 ">
-                  <Link
-                    href="/solutions/all-solutions"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    All Solutions
-                  </Link>
-                  <Link
-                    href="/solutions/token-extention"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Token Extensions
-                  </Link>
-                  <Link
-                    href="/solutions/real-world"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Real World Assets
-                  </Link>
-                  <Link
-                    href="/solutions/financial-infrastructure"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Financial Infrastructure
-                  </Link>
-                  <Link
-                    href="/solutions/paynemt-tooling"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Payments Tooling
-                  </Link>
-                  <Link
-                    href="/solutions/block-chain"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    BlockChain Links
-                  </Link>
-                  <Link
-                    href="/solutions/permissioned-environments"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Permissioned Environments
-                  </Link>
-                  <Link
-                    href="/solutions/commerce-tooling"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Commerce Tooling
-                  </Link>
-                </div>
-              )}
-              {openMenu === "learn" && (
-                <div className="max-w-full  bg-white p-2 ">
-                  <Link
-                    href="/learn/how-to-buy"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    How to buy
-                  </Link>
-                  <Link
-                    href="/learn/referrals"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Referals
-                  </Link>
-                  <Link
-                    href="/learn/docs"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Docs
-                  </Link>
-                  <Link
-                    href="/learn/partners"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Partners
-                  </Link>
-                  <Link
-                    href="/learn/brand-kit"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Brand Kit
-                  </Link>
-                  <Link
-                    href="/learn/careers"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Career
-                  </Link>
-                  <Link
-                    href="/learn/contact"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                  >
-                    Contact
-                  </Link>
-                </div>
-              )}
-              {openMenu === "testnet" && (
-                <div className="max-w-full bg-white">
-                  <Link
-                    href="https://www.nexscan.cloud/"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                    target="_blank"
-                  >
-                    Explorer
-                  </Link>
-                  <Link
-                    href="/"
-                    className="block px-3 py-2 rounded hover:bg-gray-50"
-                    onClick={closeMenu}
-                    target="_blank"
-                  >
-                    Faucet
-                  </Link>
-                </div>
-              )}
-            </div>
-            {/* spacer to offset fixed navbar height */}
-            {/* <div className="h-16" /> */}
+
             {toggleMenu && (
               <NavMobileView
                 openMenu={openMenu}
@@ -301,9 +340,25 @@ const Navbar = () => {
               />
             )}
           </div>
+
+          {openMenu && (
+            <div
+              className="bg-white w-full lg:flex justify-start items-center px-8 hidden"
+              style={{
+                height:
+                  submenuHeight === "auto" ? "auto" : `${submenuHeight}px`,
+                transition: "height 0.2s",
+              }}
+            >
+              <h1 className="text-[24px] leading-[140%] tracking-[-0.045em] font-medium text-[#07130c]">
+                /{openMenu.charAt(0).toUpperCase() + openMenu.slice(1)}
+              </h1>
+            </div>
+          )}
         </div>
       </div>
     </>
   );
 };
+
 export default Navbar;

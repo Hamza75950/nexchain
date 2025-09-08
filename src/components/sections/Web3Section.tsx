@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonComponent from "../common/Button";
+import AnimatedProgressBar from "../common/AnimatedProgressBar";
 
 function Web3Section() {
   return (
@@ -46,11 +47,12 @@ function Web3Section() {
                   1 NEX = $0.104
                 </label>
               </div>
-              <progress
+              {/* <progress
                 className="appearance-none w-full rounded-lg border border-[#07130c] h-[18px] box-border overflow-hidden"
                 value="180434912.6977728"
                 max="182276007"
-              ></progress>
+              ></progress> */}
+              <AnimatedProgressBar />
               <div className="flex justify-between items-center text-sm leading-[140%] tracking-[-0.045em] font-normal text-[#4d544f] uppercase mt-1">
                 <label>USDT Raised:</label>
                 <label>

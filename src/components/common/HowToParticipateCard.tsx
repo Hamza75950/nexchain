@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HowToSingleCard from "./HowToSingleCard";
+import Link from "next/link";
 
 function HowToParticipateCard() {
   const howToCardData = [
@@ -32,22 +33,22 @@ function HowToParticipateCard() {
           </p>
           <p className="text-base leading-[140%] tracking-[-0.045em] font-normal text-[#4d544f]">
             Go to the official Nexchain website at
-            <a
+            <Link
               className="text-base leading-[140%] tracking-[-0.045em] font-medium underline"
               target="_blank"
               href="/"
             >
               {" "}
               nexchain.ai
-            </a>{" "}
+            </Link>{" "}
             and join the presale at{" "}
-            <a
+            <Link
               className="text-base leading-[140%] tracking-[-0.045em] font-medium underline"
               target="_blank"
               href="/"
             >
               purchase.nexchain.ai
-            </a>
+            </Link>
             . Make sure to check the URL to avoid scams.
           </p>
         </div>
