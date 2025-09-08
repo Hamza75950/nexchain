@@ -3,6 +3,7 @@ import React from "react";
 import FooterSocialLinks from "./FooterSocialLinks";
 import { ArrowUpRight, MoveUpRight } from "lucide-react";
 import ButtonComponent from "./Button";
+import Link from "next/link";
 
 function Footer() {
   const aboutData = [
@@ -62,7 +63,7 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {aboutData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
@@ -71,7 +72,7 @@ function Footer() {
                         item.title === "Litepaper") && (
                         <ArrowUpRight className="w-4 h-4 text-white" />
                       )}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -83,12 +84,12 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {learnData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -100,12 +101,12 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {legalData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -138,7 +139,7 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {aboutData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
@@ -147,7 +148,7 @@ function Footer() {
                         item.title === "Litepaper") && (
                         <ArrowUpRight className="w-4 h-4 text-white" />
                       )}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -159,12 +160,12 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {learnData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -176,12 +177,12 @@ function Footer() {
               <ul className="list-none p-0 ">
                 {legalData.map((item, index) => (
                   <li key={index} className="mb-3 leading-none">
-                    <a
+                    <Link
                       href={item.link}
                       className="flex  text-white text-base leading-[140%] tracking-[-0.045em] font-normal transition duration-300"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

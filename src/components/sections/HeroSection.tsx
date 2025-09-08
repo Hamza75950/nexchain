@@ -2,6 +2,8 @@ import { GridPattern } from "@/components/magicui/grid-pattern";
 import ButtonComponent from "../common/Button";
 import Image from "next/image";
 import FlatButton from "../common/FlatButton";
+import AnimatedProgressBar from "../common/AnimatedProgressBar";
+import Link from "next/link";
 
 interface HeroType {
   buttonLable?: string;
@@ -67,11 +69,12 @@ const HeroSection: React.FC<HeroType> = ({
                     <p>1 NEX = $0.104</p>
                   </div>
 
-                  <progress
+                  {/* <progress
                     className="appearance-none w-full rounded-lg border border-[#07130c] h-[18px] box-border overflow-hidden"
                     value="170434912.6977728"
                     max="182276007"
-                  ></progress>
+                  ></progress> */}
+                  <AnimatedProgressBar />
                   <div className="flex justify-between lg:gap-10 gap-5 items-center text-xs lg:text-lg">
                     <p>USDT RAISED:</p>
                     <p>{"$9,518,009  / $10,125,000"} </p>
@@ -140,11 +143,11 @@ const HeroSection: React.FC<HeroType> = ({
             <h3 className="text-xl font-semibold mb-4">
               Token <br /> Extensions
             </h3>
-            <a href="/solutions/token-extensions">
+            <Link href="/solutions/token-extensions">
               <button className="px-4 py-2 rounded-full bg-white text-black font-medium text-sm hover:bg-gray-200">
                 Read More
               </button>
-            </a>
+            </Link>
             <div className="absolute top-4 right-4">
               <Image
                 alt="Token Extensions Icon"

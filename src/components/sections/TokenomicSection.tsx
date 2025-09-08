@@ -2,6 +2,7 @@ import { Copy } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import ButtonComponent from "../common/Button";
+import AnimatedNumber from "../common/AnimatedNumber";
 
 function TokenomicSection() {
   return (
@@ -90,8 +91,11 @@ function TokenomicSection() {
             <p className="text-[14px] leading-[140%] tracking-[-0.045em] font-normal mb-1 uppercase">
               Total initial Supply
             </p>
-            <p className="text-[32px] leading-[140%] tracking-[-0.045em] font-medium">
+            {/* <p className="text-[32px] leading-[140%] tracking-[-0.045em] font-medium">
               2,150,000,000 &nbsp;NEX{" "}
+            </p> */}
+            <p className="text-[32px] leading-[140%] tracking-[-0.045em] font-medium">
+              <AnimatedNumber value={2150000000} /> &nbsp;NEX
             </p>
           </div>
           <div className="flex gap-4">
